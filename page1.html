@@ -10,16 +10,36 @@
             border: 1px solid;
             padding: 5px;
                 }
-
+h1{
+    text-align: center;
+}
                 input[type="checkbox"] {
             transform: scale(4); 
         }
         .vertical-line {
-            border-left: 2px solid #000; /* Adjust color and width as needed */
-            height: 1760px; /* Adjust height as needed */
+            border-left: 2px solid #000; 
+            height: 1760px; 
+            margin-left: 30px;
+        }
+        .vwords{
+            writing-mode: vertical-rl;
+            white-space: nowrap; 
+        }
+        .vwords h1{
+            text-align: center;
         }
         .div1{
-            width: auto;
+            width: 700px;
+        }
+        .innerdiv{
+            display: flex;
+        }
+        .lastdivs{
+            display: flex;
+        }
+        .div3{
+            margin-left: 90px;
+display: flex;
         }
                 
                 .div1 label{
@@ -61,6 +81,7 @@
            height: 40px;
            margin-top: 10px;
            margin-left: 30px;
+           border: 1px solid;
         }
         td {
             border: 1px solid #000;
@@ -79,12 +100,22 @@ margin-left: 20px;
                     font-size: large;
                     font-weight: 200;
                 }
+               .logo img {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
+    <div class="general-wrapper">
     <div class="wrapper">
 <div class="div1">
-    <img src="./ministrylogo.png" width="100" height="100" alt="">
+    <div class="logo">
+        <img src="./ministrylogo.png" alt="">
+    </div>
+    <!-- <img src="./ministrylogo.png" width="100" height="100" alt=""> -->
 <h1>HMIS MCH 001 ANTENATAL CARD</h1>
 <p>Client Category: <label for="">N</label><input type="checkbox" name="N" id=""> <label for="">R</label><input type="checkbox" name="R" id=""> <label for="">F</label><input type="checkbox" name="F" id=""></p>
 <div class="input-container">
@@ -181,11 +212,11 @@ margin-left: 20px;
 
 <div class="input-container">
     <p>Gravida:</p>
-    <input type="text" class="custom-input" id="" required>
+    <input type="text"  class="custom-input" id="" required>
     <p>Para:</p>
-    <input type="text" class="custom-input" id="" required>
+    <input type="text" style="width: 90px;" class="custom-input" id="" required>
     <p>Abortions:</p>
-    <input type="text" class="custom-input" id="" required>
+    <input type="text" class="custom-input" style="width: 50px;" id="" required>
 </div>
 
 <h2>PREVIOUS ILLNESS:</h2>
@@ -203,13 +234,6 @@ margin-left: 20px;
 </ul>
 <p>Others specify: <span><input type="text" class="custom-input" id="" required></span></p>
 
-
-<!-- <div class="input-container">
-    <p>Surgical:</p>
-    <input type="text" class="custom-input" id="" required>
-    <p>Operations:</p>
-    <input type="text" class="custom-input" id="" required>
-</div> -->
 
 <div class="input-container">
     <h2>Surgical:</h2>
@@ -232,7 +256,7 @@ margin-left: 20px;
 </ul>
 </div>
 
-<div class="vertical-line"></div>
+<!-- <div class="vertical-line"></div> -->
 <!--==================================== middle division 1st page=================================== -->
 <div class="div2">
 <h2>SOCIAL HISTORY:</h2>
@@ -324,7 +348,10 @@ margin-left: 20px;
 
 <!--====================== the last division ========================================= -->
 <div class="div3"> 
-    <table style="writing-mode: vertical-rl; height: 1750px;">
+    <div class="vwords">    
+        <p>Comment(s) about previous pregnancies:</p>
+    </div>
+    <table class="table2" style="writing-mode: vertical-rl; height: 1750px;">
         <tr>
             <td colspan="2"></td>
             <td colspan="2">ABORTIONS</td>
@@ -334,7 +361,7 @@ margin-left: 20px;
         <tr>
             <td> Preg-nancy</td>
             <td>Year</td>
-            <td>Below 12 wks</td>
+            <td style="vertical-align: middle;">Below 12 wks</td>
             <td>Above 12 wks</td>
             <td>Pre- Mature</td>
             <td>Full Term</td>
@@ -436,12 +463,237 @@ margin-left: 20px;
                         <td></td>
                         <td></td>
                         <td></td>
-                    </tr>
-                    <tr>
-                        <td colspan="15">Comment(s) about previous pregnancies:</td>
-                    </tr>
+                    </tr>                   
+
+    </table>
+    <div class="vwords">    
+        <h1>PREVIOUS OBSTETRIC HISTORY.</h1>   
+    </div>
+   
+</div>
+    </div>
+    <!--================================ Second Page =====================================-->
+    <div class="wrapper2">
+<h1>ANTENATAL PROGRESS EXAMINATION</h1>
+
+<style>
+     .table2 {
+            border-collapse: collapse;            
+        }
+
+        .table2 td {
+            border: 1px solid black;
+            padding: 8px;
+            height: 40px;
+        }
+</style>
+<table class="table2">
+    <tr>
+        <td>Date</td>
+        <td>WOA</td>
+        <td>Fundal
+            Height</td>
+        <td>Presentation</td>
+        <td>Position
+            /lie</td>
+        <td>Relation PP/Brim</td>
+        <td>Foetal
+            Heart rate
+        </td>
+        <td>Weight (kg)</td>
+        <td>BP
+            (mmHg)
+        </td>
+        <td>Varicose
+            (V) /
+            Oedema
+            (O)</td>
+        <td>Urine test
+            (Glucose,
+            Protein,
+            Acetone)
+        </td>
+        <td>eMTCT Code</td>
+        <td>HB</td>
+        <td>Iron / Folic
+            Acid (No.
+            of Pills)</td>
+        <td>IPT</td>
+        <td>Net
+            use</td>
+        <td>Complaints
+            and
+            Remarks
+        </td>
+        <td>Return Date</td>
+        <td>
+            Name of
+            Examiner and Cadre
+        </td>
+    </tr>
+    <tr><td></td> <td></td> <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td> <td></td> <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td> <td></td> <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td> <td></td> <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td> <td></td> <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td> <td></td> <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td> <td></td> <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td> <td></td> <td></td> <td></td> <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<div class="innerdiv">
+    <div>
+    <div class="input-container">
+        <h2>ROUTINE MEDICINES/INTERVENTION:</h2>
+        <p>(indicate Date) Given</p>
+    </div>
+
+<div class="input-container">
+    <h2>Mebendazole:</h2>
+    <input type="text" class="custom-input" id="" required>
+    <p>;</p>
+    <h2>Misoprostol:</h2>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<div class="input-container">
+    <h2>Td:</h2>
+    <input type="checkbox" name="" id="">
+    <p>;</p>   
+    <input type="checkbox" name="" id="">
+    <p>;</p>
+    <input type="checkbox" name="" id="">
+    <p>;</p>
+    <h2>Date LLIN given:</h2>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<div class="input-container">
+    <h2>Sickle Cell Screening Result</h2>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<div class="input-container">
+    <h2>Random Blood Sugar</h2>
+    <input type="text" class="custom-input" id="" required>
+</div>
+<div class="input-container">
+    <h2>Syphilis Test Results:</h2>
+    <input type="text" class="custom-input" id="" required>
+</div>
+<div class="input-container">
+    <h2>B/S for MPs / RDT for Malaria:</h2>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<div class="input-container">
+    <h2>EMTCT Code</h2>
+    <input type="text" class="custom-input" id="" required>
+    <p>Date</p>
+    <input type="text" class="custom-input" id="" required>
+</div>
+</div>
+
+<div>
+    <h1>ULTRASOUND REPORTS:</h1>
+    <table class="table2" style="width: 100%;">
+        <tr>
+            <td>Date</td>
+            <td>Gestational Placenta
+                Age</td>
+                <td>Placenta (site and Maturity)</td>
+                <td>Amniotic Fluid</td>
+                <td>Complication/
+                    Abnormality</td>
+                    <td>Comments</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>            
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>            
+        </tr>
     </table>
 </div>
+</div>
+
+<div class="lastdivs">
+    <div style="width: 600px; border: 4px solid;">
+        <p>RISK FACTORS</p>
+        <p>RECOMMENDATION FOR DELIVERY</p>
+        <h2>For HIV positive mother (Put a()if YES or X if NO)</h2>
+
+        <div class="input-container">
+            <h2>Y</h2>
+            <input type="checkbox" name="" id="">
+            <h2>N</h2>
+            <input type="checkbox" name="" id="">
+            <h2>Art No</h2>
+            <input type="text" class="custom-input" id="" required>
+        </div>
+        <ul>
+            <li>High risk Mothe .........................................</li>
+            <li>Adherence counselling ...................................</li>
+            <li>Referred psychosocial groups (PSS/FSG)...................</li>
+            <li>Partner disclosure support done.........................</li>
+            <li>Infant feeding counselling done.........................</li>
+            <li>Niverapine Syrup for baby.............................</li>
+        </ul>
+    </div>
+    <div style="border: 2px solid; margin-left: 50px; width: 100%;">
+<p>*MAM Moderate Acute Malnutrition, SAM-Severe Acute Malnutrition, SGBV-Sexual and Gender-Based Violence</p>
+<h2>NOTES/TREATMENT:</h2>
+<hr>
+        <br>
+        <br>
+<hr>
+        <br>
+        <br>    
+<hr>
+        <br>
+        <br>
+<hr>
+        <br>
+        <br>
+<hr>
+    </div>
+</div>
+    </div>
     </div>
 </body>
 </html>
