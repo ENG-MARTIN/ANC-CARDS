@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic styling */
+       
+
+        /* Style for the container */
+        .input-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Adjust as needed */
+        }
+
+        /* Style for the label */
+        .input-label {
+            flex-shrink: 0; /* Prevent label from shrinking */
+            color: #333;
+            margin-right: 10px; /* Adjust as needed */
+        }
+
+        /* Style for the input field */
+        .custom-input {
+            flex-grow: 1; /* Allow input to grow and fill available space */
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #333; /* Set the color of the underline */
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        /* Style for the input field when focused */
+        .custom-input:focus {
+            border-bottom: 2px solid #007bff; /* Change the color of the underline when focused */
+        }
+    </style>
+</head>
+<body>
+  
+<table border="1">
+    <tr>
+        <td>Cell 1</td>
+        <td colspan="2">Split Cell</td>
+        <td>Cell 4</td>
+    </tr>
+    <tr>
+        <td>Cell 5</td>
+        <td>Cell 6</td>
+        <td>Cell 7</td>
+        <td>Cell 8</td>
+    </tr>
+</table>
+    
+</body>
+</html>

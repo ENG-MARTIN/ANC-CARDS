@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANC card</title>
+    <style>
+        .wrapper{
+            display: flex;
+            border: 1px solid;
+            padding: 5px;
+                }
+
+                input[type="checkbox"] {
+            transform: scale(4); 
+        }
+        .vertical-line {
+            border-left: 2px solid #000; /* Adjust color and width as needed */
+            height: 1760px; /* Adjust height as needed */
+        }
+        .div1{
+            width: auto;
+        }
+                
+                .div1 label{
+                    margin-left: 40px;
+                }
+                .div1 table{
+                    border: 1px solid;
+                    width: 100px;
+                }
+
+                .input-container {
+            display: flex;
+            align-items: center;         
+        }
+
+        
+        .custom-input {
+            flex-grow: 1; 
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #333; 
+            outline: none;
+            box-sizing: border-box;
+            margin-right: 30px;
+        }
+
+        
+        .custom-input:focus {
+            border-bottom: 2px solid #007bff; 
+        }
+       
+        .nin{
+            display: flex;
+        }
+        .nin table {
+            border-collapse: collapse;
+           margin-right: 10px;
+           width: 600px;
+           height: 40px;
+           margin-top: 10px;
+           margin-left: 30px;
+        }
+        td {
+            border: 1px solid #000;
+            padding: 8px;           
+        }      
+        ul li{
+            list-style: none;
+            font-size: large;
+            font-weight: 200;
+        }
+        .div2{
+margin-left: 20px;
+                }
+                
+                p{
+                    font-size: large;
+                    font-weight: 200;
+                }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+<div class="div1">
+    <img src="./ministrylogo.png" width="100" height="100" alt="">
+<h1>HMIS MCH 001 ANTENATAL CARD</h1>
+<p>Client Category: <label for="">N</label><input type="checkbox" name="N" id=""> <label for="">R</label><input type="checkbox" name="R" id=""> <label for="">F</label><input type="checkbox" name="F" id=""></p>
+<div class="input-container">
+    <p>Health Unit:</p>
+    <input type="text" style="width: 50px;" class="custom-input" id="username" required>
+    <p>Reg no.</p>
+    <input type="text" style="width: 50px;" class="custom-input" id="username" required>
+</div>
+<div class="input-container">
+    <p>Name:</p>
+    <input type="text" style="width: 80px;" class="custom-input" id="username" required>
+</div>
+
+<div class="nin">
+<p>NIN</p>
+<span>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>     
+</span>
+</div>
+
+<!-- Age and phone number -->
+<div class="input-container">
+    <p>Phone No:</p>
+    <input type="text" class="custom-input" id="" required>
+    <p>Age:</p>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<!-- Village and parish -->
+<div class="input-container">
+    <p>Village:</p>
+    <input type="text" class="custom-input" id="" required>
+    <p>Parish:</p>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<!-- Sub and phone District -->
+<div class="input-container">
+    <p>Sub- county:</p>
+    <input type="text" class="custom-input" id="" required>
+    <p>District:</p>
+    <input type="text" class="custom-input" id="" required>
+</div>
+<!-- Occupation and Religion -->
+<div class="input-container">
+    <p>Occupation:</p>
+    <input type="text" class="custom-input" id="" required>
+    <p>Religion:</p>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<!-- Education and tribe-->
+<div class="input-container">
+    <p> Education level:</p>
+    <input type="text" class="custom-input" id="" required>
+    <p>Tribe:</p>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<!-- marital-->
+<p> Marital status:  <span> <input type="text" class="custom-input" id="" required></span></p>
+
+<h2>Next of Kin:</h2>
+
+<div class="input-container">
+    <p>Name:</p>
+    <input type="text" class="custom-input" id="" required>
+    <p>Phone No:</p>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<div class="input-container">
+    <p>Relationship:</p>
+    <input type="text" class="custom-input" id="" required>
+    <p>Address:</p>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<div class="input-container">
+    <p>Gravida:</p>
+    <input type="text" class="custom-input" id="" required>
+    <p>Para:</p>
+    <input type="text" class="custom-input" id="" required>
+    <p>Abortions:</p>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<h2>PREVIOUS ILLNESS:</h2>
+<h2>Medical: <span style="margin-left: 140px;">MEDICATIONS:</span></h2>
+<ul>
+    <li>Cardiac Disease: <span style="margin-left: 140px;">ARVs:</span></li>
+    <li>Kidney Disease: <span style="margin-left: 140px;">Others specify: <input type="text" class="custom-input" id="" required></span></li>
+    <li>Hypertension:</li>
+    <li>TB:</li>
+    <li>Asthma:</li>
+    <li>STI:</li>
+    <li>Sickle Cell Disease:</li>
+    <li>Epilepsy (seizures)</li>
+    <li>Diabetes:</li>    
+</ul>
+<p>Others specify: <span><input type="text" class="custom-input" id="" required></span></p>
+
+
+<!-- <div class="input-container">
+    <p>Surgical:</p>
+    <input type="text" class="custom-input" id="" required>
+    <p>Operations:</p>
+    <input type="text" class="custom-input" id="" required>
+</div> -->
+
+<div class="input-container">
+    <h2>Surgical:</h2>
+    <h3> &nbsp; Operations:</h3>
+</div>
+<ul>
+    <li>Blood Transfusion: why?</li>
+    <li>Fracture of pelvis, spine and femur:</li>
+</ul>
+
+<h2>OBS/GYN: <span style="font-weight: 100;">D & C</span></h2>
+<ul>
+    <li>Ectopic pregnancy:</li>
+    <li>Caesarean Section:</li>
+    <li>Vacuum Extraction, Forceps</li>
+    <li>Retained Placenta</li>
+    <li>PPH</li>
+    <li>Operations on the uterus</li>
+    <li>Cervical circlage (Shirodkar, Mc Donald)</li>
+</ul>
+</div>
+
+<div class="vertical-line"></div>
+<!--==================================== middle division 1st page=================================== -->
+<div class="div2">
+<h2>SOCIAL HISTORY:</h2>
+<p>Smoking/ Alcohol</p>
+
+<div class="input-container">
+    <h2>Risk of SGBV</h2>
+    <input type="checkbox" style="transform: scale(2);" name="" id="">
+    <label for="">Yes</label>
+    <input type="checkbox" style="transform: scale(2);" name="" id="">
+    <label for="">No</label>
+</div>
+<p>If yes Specify: Physical/Psycho-social</p>
+
+<div class="input-container">
+    <p>Others (specify)</p>
+    <input type="text" class="custom-input" id="" required>
+</div>
+<div class="input-container">
+    <p>Health of the Husband/partner:</p>
+    <input type="text" class="custom-input" id="" required>
+</div>
+
+<h2>FAMILY HISTORY:</h2>
+<ul>
+    <li>Diabetes</li>
+    <li>Hypertension:</li>
+    <li>Sickle Cell Disease:</li>
+    <li>Epilepsy:</li>
+    <li>Twins:</li>
+    <li>Others:</li>
+</ul>
+
+<h2>MENSTRUAL AND CONTRACEPTIVE HISTORY:</h2>
+<ul>
+    <li>Length of menses (no. of days of bleeding)</li>
+    <li>Amount: Heavy/Normal</li>
+    <li>Family Planning methods ever used:</li>
+    <li>When and why was it discontinued?</li>
+    <li>If never used, why?</li>
+</ul>
+<h2>PRESENT PREGNANCY:</h2>
+<ul>
+    <li>First Day of LNMP: <span> <input type="text" class="custom-input" id="" required></span></li>
+    <li>EDD: <span> <input type="text" class="custom-input" id="" required></span></li>
+    <li>Weeks of Amenorrhea: <span> <input type="text" class="custom-input" id="" required></span></li>
+</ul>
+<p>Complications of Pregnancy if any:</p>
+<ul>
+    <li>-Bleeding</li>
+    <li>-Excessive vomiting</li>
+    <li>Others Specify: <span><input type="text" class="custom-input" id="" required></span></li>
+    <li>Any hospitalisation? <span>Y <input type="checkbox" style="transform: scale(2);" name="" id=""></span> <span>N<input type="checkbox" style="transform: scale(2);" name="" id=""></span></li>
+</ul>
+<p>If Yes; for: <span><input type="text" class="custom-input" id="" required></span></p>
+<p>Has any of the following been present for over 2 weeks?</p>
+<ul>
+    <li>Cough, Fever, Weight loss, Night Sweats:</li>
+    <li>Known HIV status? <span>Y <input type="checkbox" style="transform: scale(2);" name="" id=""></span> <span>N<input type="checkbox" style="transform: scale(2);" name="" id=""></span></li>
+</ul>
+
+<h2>PHYSICAL EXAMINATION:</h2>
+<ul>
+    <li>Height: <span><input type="text" style="width: 50px;" class="custom-input" id="" required></span> cm Weight: <span><input type="text" style="width: 50px;" class="custom-input" id="" required></span> kg</li>
+    <li>BP:  <span><input type="text" style="width: 50px;" class="custom-input" id="" required></span> Pulse:  <span><input type="text" style="width: 50px;" class="custom-input" id="" required></span> Temp:  <span><input type="text" style="width: 50px;" class="custom-input" id="" required></span></li>
+    <li>MUAC:  <span><input type="text" class="custom-input" id="" required></span></li>
+</ul>
+<p>Nutritional status*: Normal/ MAM/ SAM</p>
+
+<h2>Examine and Comment on the following:</h2>
+<ul>
+    <li>-Oral thrush:  <span style="margin-left: 100px;">-Anaemia</span></li>
+    <li>-Teeth: <span style="margin-left: 150px;">-Eyes:</span></li>
+    <li>-Neck: <span style="margin-left: 160px;">-Nails:</span></li>
+    <li>-Breasts: <span style="margin-left: 150px;">-Palms:</span></li>
+    <li>-Legs: <span style="margin-left: 160px;">-Jaundice:</span></li>
+    <li>-Deformities: <span style="margin-left: 100px;">-Heart:</span></li>
+    <li>-Lymph Nodes: <span style="margin-left: 100px;">-Lungs:</span></li>
+    <li>-Herpes zooster:</li>
+</ul>
+<h2>PELVIC EXAMINATION :</h2>
+<ul>
+    <li>Vulva: <span style="margin-left: 100px;">Cervix:</span></li>
+    <li>Vagina: <span style="margin-left: 100px;">Moniliasis</span></li>
+</ul>
+</div>
+
+<div class="vertical-line"></div>
+
+<!--====================== the last division ========================================= -->
+<div class="div3"> 
+    <table style="writing-mode: vertical-rl; height: 1750px;">
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="2">ABORTIONS</td>
+            <td colspan="6">TYPE OF DELIVERIES</td>
+            <td colspan="5">CHILD</td>
+        </tr>
+        <tr>
+            <td> Preg-nancy</td>
+            <td>Year</td>
+            <td>Below 12 wks</td>
+            <td>Above 12 wks</td>
+            <td>Pre- Mature</td>
+            <td>Full Term</td>
+            <td>Type of
+                Delivery</td>
+            <td>Place of
+                delivery</td>
+            <td>Third Stage</td>
+            <td>Puer perium</td>
+
+            <td>Alive SB/NND</td>
+            <td>Sex</td>
+            <td>BirthWeight</td>
+            <td>Immun</td>
+            <td>Health
+                Condition</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="15">Comment(s) about previous pregnancies:</td>
+                    </tr>
+    </table>
+</div>
+    </div>
+</body>
+</html>
