@@ -3,16 +3,21 @@
             display: flex;
             border: 1px solid;
             padding: 5px;
+            height: 1300px;
                 }
-h1{
-    text-align: center;
-}
+        h1{
+            text-align: center;
+   
+        }
+        h2{
+            font-size:medium;
+        }   
                 input[type="checkbox"] {
-            transform: scale(4); 
+            transform: scale(2.5); 
         }
         .vertical-line {
             border-left: 2px solid #000; 
-            height: 1760px; 
+            height: 1300px; 
             margin-left: 30px;
         }
         .vwords{
@@ -25,6 +30,17 @@ h1{
         .div1{
             width: 700px;
         }
+        .div1 label{
+            margin-right: 10px;
+        }
+        .check_label{
+            margin-left: 10px; 
+        }
+        .div1 table{
+            border: 1px solid;
+            width: 100px;
+        }
+
         .innerdiv{
             display: flex;
         }
@@ -33,17 +49,16 @@ h1{
         }
         .div3{
             margin-left: 90px;
-display: flex;
+            display: flex;
+            height: 1000px;
         }
-                
-                .div1 label{
-                    margin-left: 40px;
-                }
-                .div1 table{
-                    border: 1px solid;
-                    width: 100px;
-                }
-
+        .thirdtable td{
+            height: 100px;
+        }  
+        .thirdtable{
+            width: 500px;
+        }
+               
                 .input-container {
             display: flex;
             align-items: center;         
@@ -55,9 +70,10 @@ display: flex;
             padding: 10px;
             border: none;
             border-bottom: 2px solid #333; 
-            outline: none;
+            outline: none;            
             box-sizing: border-box;
             margin-right: 30px;
+            height: 5px;
         }
 
         
@@ -83,20 +99,39 @@ display: flex;
         }      
         ul li{
             list-style: none;
-            font-size: large;
+            font-size: small;
             font-weight: 200;
         }
         .div2{
-margin-left: 20px;
-                }
+        margin-left: 20px;
+        height: 1000px;
+        }
                 
                 p{
-                    font-size: large;
+                    font-size:small;
                     font-weight: 200;
                 }
                .logo img {
-            width: 100px;
-            height: 100px;
+            width: 70px;
+            height: 70px;
             margin: auto;
             display: block;
+        }
+        .check{
+            margin-left: 50px;
+        }
+     .table2 {
+            border-collapse: collapse;            
+        }
+
+        .table2 td {
+            border: 1px solid black;
+            padding: 8px;
+            height: 40px;
+        }
+        .big{
+height: 400px;
+        }
+        .ULTRASOUNDdiv{
+            width: 100%;
         }
